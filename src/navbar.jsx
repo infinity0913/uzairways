@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "styled-components";
-import "./inndex";
+
 const A = styled("A")`
   padding: 10px;
   color: #ffffff;
@@ -12,7 +12,18 @@ const S = styled("A")`
 `;
 
 const Logo = styled("img")`
-  width: 250px;
+  width: 220px;
+`;
+
+const H1 = styled("h1")`
+  color: #f0f0f0;
+  font-size: 38px;
+  display: flex;
+  justify-content: center;
+`;
+const Container = styled("div")`
+  align-items: center;
+  margin-top: 100px;
 `;
 
 
@@ -24,7 +35,7 @@ function Example() {
           display: "flex",
           alignItems: "center",
           paddingLeft: "50px",
-          marginTop: "-50px",
+          marginTop: "-40px",
         }}
       >
         <Logo
@@ -52,6 +63,15 @@ function Example() {
           </A>
         </div>
       </div>
+      <Container>
+      <div>
+        <H1>Uzbekiston Airways bilan sayohat qiling</H1>
+        <H1>
+          Aviachiptalarni onlayn xarid qiling va 3 foizli chegirmaga ega
+          bo'ling!
+        </H1>
+      </div>
+    </Container>
     </>
   );
 }
