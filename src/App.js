@@ -1,16 +1,29 @@
 import './App.css';
-import Mahsus from './mahsus';
-import Example from './navbar';
-import Nimadur from './nimadur';
+import Head from './components/header';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import Feature from './pages/Feature';
+import Our from './pages/ourmission';
+import About from './pages/about';
+import Watch from './components/wathes';
+import Signup from './pages/signup';
+import Signup2 from './components/signup2';
 function App() {
   return (
-    <div >
-      <div style={{backgroundImage:"url('https://bukhara-news.uz/wp-content/uploads/2022/07/img_20220708_093413_919.jpg')",backgroundRepeat:"no-repeat",backgroundSize:"100% 100%",height:"102vh"}}>
-      <Example/>
-    </div>
-    <Nimadur/>
-    <Mahsus/>
-    </div>
+    <BrowserRouter>
+      <div>
+    <Head/>
+        <Routes>
+            <Route path='/' element={<Home/>} />
+            <Route path='/feature' element={<Feature/>} />
+            <Route path='/ourmission' element={<Our/>} />
+            <Route path='/aboutus' element={<About/>} />
+            <Route path='/watches' element={<Watch/>} />
+            <Route path='/contactus' element={<Signup/>} />
+            <Route path='/signup' element={<Signup2/>} />
+        </Routes>
+     </div>
+    </BrowserRouter>
   );
 }
 
