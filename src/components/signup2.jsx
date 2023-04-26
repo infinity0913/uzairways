@@ -56,7 +56,7 @@ function Signup2({ isAuth }) {
           <div style={{ margin: "20px" }}>
             <label>Username </label>
             <input
-              style={{ display: "flex", width: "300px", height: "50px",borderRadius:"5px" }}
+              style={{ display: "flex", width: "300px", height: "50px",borderRadius:"5px", border:"1px solid black" }}
               type="text"
               name="uname"
               required
@@ -64,8 +64,8 @@ function Signup2({ isAuth }) {
           </div>
           <div style={{ margin: "20px" }}>
             <label>Password </label>
-            <input
-              style={{ display: "flex", width: "300px", height: "50px",borderRadius:"5px" }}
+            <inputq
+              style={{ display: "flex", width: "300px", height: "50px",borderRadius:"5px", border:"1px solid black"}}
               type="password"
               name="pass"
               required

@@ -3,12 +3,12 @@ import styled from "styled-components";
 import mask from "../img/maskgroup.png";
 import { Link } from "react-router-dom";
 import { BsFillSignTurnRightFill } from "react-icons/bs";
-import {IoIosContacts} from "react-icons/io";
+import { IoIosContacts } from "react-icons/io";
 
 const Row = styled("div")`
   justify-content: flex-end;
   display: flex;
-  margin-right: 340px;
+  margin-right: 180px;
 `;
 const A = styled(Link)`
   text-decoration: none;
@@ -17,15 +17,13 @@ const A = styled(Link)`
   flex-direction: column;
   margin: 15px;
   color: grey;
-  transition: all ease-out 0.5s;
+  transition: all ease 0.8s;
   margin-top: 28px;
   &:hover {
-    border-bottom: 1px solid #735cff;
-    font-weight: bold;
+    border-bottom: 2px solid #735cff;
   }
 `;
 const BTn = styled("button")`
-  position: absolute;
   width: 160px;
   height: 55px;
   left: 1335px;
@@ -48,7 +46,7 @@ const BT = styled("button")`
   position: absolute;
   width: 160px;
   height: 55px;
-  left: 1150px;
+  left: 1240px;
   top: 14px;
   background: #735cff;
   border-radius: 5px;
@@ -59,13 +57,20 @@ function Head() {
     <div>
       <Row>
         <Img src={mask} alt="" />
-        <A to={'/'}>Home</A>
-        <A to={'/feature'}>Featured</A>
-        <A to={'/ourmission'}>Our Mission</A>
-        <A to={'/aboutus'}>About us</A>
-        <A to={'/watches'}>Watches</A>
-        <A  to={'/contactus'}><BTn>Contact us<IoIosContacts style={{marginLeft:"10px",color:"#c8c0ff"}}/></BTn></A>
-        <A to={'./signup'} ><BT>Sign up<BsFillSignTurnRightFill style={{marginLeft:"10px",color:"#c8c0ff"}}/></BT></A>
+        <A to={"/"}>Home</A>
+        <A to={"/feature"}>Featured</A>
+        <A to={"/ourmission"}>Our Mission</A>
+        <A to={"/aboutus"}>About us</A>
+        <A to={"/watches"}>Watches</A>
+        <A to={"/contactus"}></A>
+        <A to={"./signup"}>
+          <BT>
+            Sign up
+            <BsFillSignTurnRightFill
+              style={{ marginLeft: "8px", color: "#c8c0ff" }}
+            />
+          </BT>
+        </A>
       </Row>
     </div>
   );
