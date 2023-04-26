@@ -46,7 +46,7 @@ const BT = styled("button")`
   position: absolute;
   width: 160px;
   height: 55px;
-  left: 1240px;
+  left: 1300px;
   top: 14px;
   background: #735cff;
   border-radius: 5px;
