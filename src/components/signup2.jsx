@@ -64,7 +64,7 @@ function Signup2({ isAuth }) {
           </div>
           <div style={{ margin: "20px" }}>
             <label>Password </label>
-            <inputq
+            <input
               style={{ display: "flex", width: "300px", height: "50px",borderRadius:"5px", border:"1px solid black"}}
               type="password"
               name="pass"
